@@ -21,5 +21,5 @@ files = [{f: e.getAttribute(f) for f in ('ID', 'URI', 'digest', 'name')}
          for e in doc.getElementsByTagName("cat:entry")]
 # from pprint import pprint
 # pprint(files)
-added = list(ds.addurls(files, topurl + 'files/{URI}', '{URI}', fast=True, save=False))
+added = list(ds.addurls(files, topurl + 'files/{URI}', '{URI}', fast=False, save=False))
 print(f"Processed {len(added)} entries")
